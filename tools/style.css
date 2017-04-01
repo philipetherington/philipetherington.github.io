@@ -7,6 +7,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
 a {
 	/*font-family: 'Palanquin', sans-serif;*/
 	font-family: 'Roboto', sans-serif;
@@ -20,20 +21,21 @@ a {
 }
 
 body{
-margin:0;
-padding:0;
-color: #fff;
-text-align: center;
-background: url(../images/bg.jpg);
-background-position: center;
-	/* right bottom no-repeat; */
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
-position: relative;
-overflow: scroll;
+	font-family: 'Roboto', sans-serif;
+	margin:0;
+	padding:0;
+	color: #fff;
+	text-align: center;
+	background: url(../images/bg.jpg);
+	background-position: center;
+		/* right bottom no-repeat; */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+	position: relative;
+	overflow: scroll;
 }
 
 .black{
@@ -54,6 +56,7 @@ overflow: hidden;
 }
 	
 #header{
+	letter-spacing: 5px;
 	position: relative;
 	top: 30vh;
 	width: 100%;
@@ -68,10 +71,10 @@ h1{
 }
 
 h1home{
-font-family: 'Corben', cursive;
-font-size: 46px;
-font-weight: 700;
-/* vertical-align: middle; */
+	font-family: 'Corben', cursive;
+	font-size: 46px;
+	font-weight: 700;
+	/* vertical-align: middle; */
 }
 
 h2{
@@ -130,7 +133,7 @@ h2 strong.sep-two{
 }
 
 #middle2 p{
-	font-family: 'Palanquin', sans-serif;
+	/*font-family: 'Palanquin', sans-serif;*/
 	font-size: 20px;
 	font-weight: 300;
 	color: #fff;
@@ -154,13 +157,38 @@ h2 strong.sep-two{
 }
 
 #footer p{
-	font-family: 'Palanquin', sans-serif;
+	/*font-family: 'Palanquin', sans-serif;*/
 	font-size: 10px;
 	font-weight: 500;
 	color: #fff;
 	line-height: 34px;
 	padding: 0 30%;
 	z-index:-1;
+}
+
+@media screen and (max-width: 750px){
+#wrapper {
+	 zoom: 0.8;
+	 moz-transform: scale(0.8);}
+#footer {
+	 zoom: 0.8;
+	 moz-transform: scale(0.8);}
+	}
+@media screen and (max-width: 570px){
+#wrapper {
+	 zoom: 0.6;
+	 moz-transform: scale(0.6);}
+#footer {
+	 zoom: 0.6;
+	 moz-transform: scale(0.6);}
+}
+@media screen and (max-height: 400px){
+#wrapper {
+	 zoom: 0.6;
+	 moz-transform: scale(0.6);} 
+#footer {
+	 z-index: -1;
+	 zoom: 0.6;
 }
 
 /* @media screen and (max-width: 750px){
